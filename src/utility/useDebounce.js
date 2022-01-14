@@ -14,9 +14,9 @@ const debounce = (fn, delay = 0, immediate = false) => {
 
 /**
  * Generates a customRef using the debounce function
- * @param {initialValue} any - The initial value for the ref
- * @param {delay} number - The number of miliseconds to delay
- * @param {immediate} boolean - if the changes should be immediate
+ * @param {any} initialValue - The initial value for the ref
+ * @param {number} delay - The number of miliseconds to delay
+ * @param {boolean} immediate - if the changes should be immediate
  */
 
 const debouncedRef = (initialValue, delay, immediate) => {
