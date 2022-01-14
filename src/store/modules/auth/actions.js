@@ -52,7 +52,6 @@ export async function logout(context) {
             returnTo: window.location.origin,
         });
         context.commit('resetData')
-        console.log('state after reseting data', context.state)
     } catch (error) {
         console.log('Error while logout', error)
     }

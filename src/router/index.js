@@ -23,7 +23,6 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-  console.log('AUTH', store.getters['auth/isAuthenticated'])
   if(to.path === '/login') return
   if (!store.getters['auth/isAuthenticated']) return '/login'
 })
